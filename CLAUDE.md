@@ -38,4 +38,3 @@ This is a **code kata practice repository** containing algorithmic challenges an
 - The project is configured for ES modules with TypeScript
 - Vitest runs with globals enabled, so `describe`, `it`, and `expect` are available without imports
 - Each kata solution is self-contained and can be run independently
-- 使用繁體中文回覆
