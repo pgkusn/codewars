@@ -1,22 +1,8 @@
 ---
-description: '處理 Codewars 題目：翻譯成繁體中文、建立 TDD 環境、提供解題思路'
-allowed-tools: ['ReadFile', 'WriteFile', 'ListDirectory', 'Bash(*)']
+description: Codewars 題目設置
 ---
 
-# Claude 命令：Codewars 題目設置
-
-自動處理 Codewars 程式題目，包含翻譯、建立測試環境和解題指引。
-
-## 使用方式
-
-```
-/codewars-setup
-/codewars-setup [指定題目檔案路徑]
-```
-
 ## 執行流程
-
-此命令會依序執行以下步驟：
 
 ### 1. 讀取題目檔案
 
@@ -28,8 +14,6 @@ allowed-tools: ['ReadFile', 'WriteFile', 'ListDirectory', 'Bash(*)']
 - 將整個題目內容翻譯成繁體中文
 - 保留程式碼範例的原始格式
 - 建立翻譯後的題目檔案路徑：`src/codewars/[函式/類別名稱]/README.md`
-
-### 3. 建立 TDD 測試環境
 
 根據題目提供的 Solution 建立以下檔案在 `src/codewars/[函式/類別名稱]/` 目錄中：
 
@@ -108,13 +92,3 @@ describe('Sum Array', () => {
 - 確保題目檔案格式正確且包含完整的 Solution 範例
 - 如果無法判斷函式名稱，會提示你手動指定
 - 生成的檔案會放在 `src/codewars/[函式名稱]/` 目錄，目錄名稱使用小駝峰式命名法
-
-## 執行範例
-
-```bash
-# 使用預設路徑
-/codewars-setup
-
-# 指定特定題目
-/codewars-setup src/codewars/two-sum.md
-```

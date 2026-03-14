@@ -13,10 +13,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a **code kata practice repository** containing algorithmic challenges and solutions, primarily from Codewars. The project structure is:
 
-- **`src/codewars/`**: Contains individual kata solutions and their corresponding test files
-- Each kata is implemented as a standalone TypeScript file (e.g., `operArray.ts`)
-- Test files use the `.spec.ts` naming convention (e.g., `operArray.spec.ts`)
-- Solutions are organized as individual functions exported from their respective files
+- **`src/codewars/`** & **`src/leetcode/`**: Contains individual problem folders
+- Each problem has its own directory (e.g., `src/codewars/operArray/`)
+- **`index.ts`**: Standalone solution file
+- **`index.spec.ts`**: Corresponding test file using the standard Vitest globals
+- **`README.md`**: Problem description and instructions (often in Trad. Chinese)
 
 ## Testing Framework
 
@@ -31,7 +32,7 @@ This is a **code kata practice repository** containing algorithmic challenges an
 - **Testing**: Each kata solution should have a corresponding `.spec.ts` file
 - **Dependencies**: Uses lodash and ramda for utility functions
 - **Code Style**: Functions are exported individually, allowing for selective imports
-- **File Organization**: One kata per file, with clear function names describing the problem
+- **File Organization**: One problem per directory, with `index.ts`, `index.spec.ts`, and `README.md`
 
 ## Development Notes
 
